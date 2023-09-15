@@ -1,3 +1,9 @@
+@media(min-width:1200px){
+  .header-top-wrapper .search-bar {
+    top: 30%;
+    left: 215px;
+}
+}
 @media(max-width:1050px){
   .menu-wrapper ul li{
     display: none;
@@ -5,6 +11,10 @@
   .menu-wrapper ul li.button, .menu-wrapper ul li.button-2{
     display: inline-block;
   }
+  .header-top-wrapper .search-bar {
+    top: 32%;
+    left: 36%;
+}
 
 }
 @media(min-width:1050px){
@@ -15,7 +25,11 @@
     padding-left: 0;
   }
 
-
+}
+@media(max-width:700px){
+  .header-top-wrapper .search-bar{
+    display: none;
+  }
 }
 @media(max-width:575px){
   .header-top-wrapper{
@@ -30,5 +44,6 @@
   .menu-wrapper ul li+ li{
     margin-left: 0;
   }
+
 
 }
