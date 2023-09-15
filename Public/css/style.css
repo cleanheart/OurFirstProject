@@ -1,0 +1,147 @@
+/*Template Name: Our Project
+Author: Clean Heart
+Verson: 1.0.0
+*/
+
+/*Root Variable*/
+
+:root{
+  --primary-color:#fe696a;
+  --heading-color:#000;
+  --body-color:#777;
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+/*******Theme Default*******/
+
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: var(--body-color);
+  font-family: 'Poppins', sans-serif;
+}
+h1{
+  font-size: 54px;
+}
+h2{
+  font-size: 40px;
+}
+h3{
+  font-size: 34px;
+}
+h4{
+  font-size: 32px;
+}
+h5{
+  font-size: 28px;
+}
+h6{
+  font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6{
+  color: var(--heading-color);
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+p{
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+i{
+  line-height: 0;
+}
+img{
+  max-width: 100%;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+
+}
+ul{
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+li{
+  list-style-type:none;
+}
+.container{
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0;
+}
+.button{
+  padding: 10px 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: #000;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+.button-2{
+  padding: 10px 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+}
+.button a, .button-2 a{
+  color: var(--bs-light)!important;
+}
+
+
+/* Header Section Start Hare */
+
+header .header-top-wrapper{
+  display: flex;
+  align-items: center;
+  padding: 25px 24px 33px;
+  position: relative;
+}
+.header-top-wrapper .logo{
+  padding-left:37px;
+}
+.header-top-wrapper .mobile-btn .icon{
+  color: var(--heading-color);
+  font-size: 25px;
+  display: inline-block;
+  position: absolute;
+  top: 37%;
+}
+.menu-wrapper{
+  margin-left: auto;
+}
+.menu-wrapper ul li+ li{
+  margin-left: 23px;
+}
+.menu-wrapper ul li a{
+  color: var(--heading-color);
+  font-weight: 500;
+}
