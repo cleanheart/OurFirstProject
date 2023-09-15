@@ -119,6 +119,9 @@ li{
 
 /* Header Section Start Hare */
 
+header{
+  margin-bottom: 1000px;
+}
 header .header-top-wrapper{
   display: flex;
   align-items: center;
@@ -144,4 +147,36 @@ header .header-top-wrapper{
 .menu-wrapper ul li a{
   color: var(--heading-color);
   font-weight: 500;
+  transition: 0.3s;
 }
+.menu-wrapper ul li a:hover{
+  color: var(--primary-color);
+}
+
+/**** Sticky Header*****/
+.header-top-wrapper.sticky{
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  z-index: 10;
+  animation: 1s theme_slideInDown;
+  background: var(--primary-color);
+}
+.header-top-wrapper.sticky .menu-wrapper ul li a{
+  color: var(--bs-light);
+  transition: 0.3s;
+}
+.header-top-wrapper.sticky .menu-wrapper ul li a:hover{
+  color: #fff;
+}
+
+@keyframes theme_slideInDown {
+  0% {
+      top: -60px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
