@@ -135,7 +135,7 @@ header .header-top-wrapper{
 /** search Bar ***/
 .header-top-wrapper .search-bar{
   position: absolute;
-  top: 65%;
+  top: 75px;
   left: 45%;
 }
 .header-top-wrapper .search-bar form{
@@ -210,6 +210,8 @@ form:valid .fa{
   display: block;
 }
 
+/******** mobile button **********/
+
 .header-top-wrapper .mobile-btn .icon{
   color: var(--heading-color);
   font-size: 25px;
@@ -253,6 +255,10 @@ form:valid .fa{
 .header-top-wrapper.sticky .button-2{
   border: 1px solid #fff;
 }
+.header-top-wrapper.sticky .search-bar form{
+  background: #fff;
+}
+
 
 @keyframes theme_slideInDown {
   0% {
