@@ -285,6 +285,7 @@ form:valid .fa{
   background: url(../images/hero-1.jpg);
   background-size: cover;
   padding: 50px 0;
+  display: none;
 }
 .hero-area .title-wrapper{
   max-width: 661px;
@@ -301,4 +302,31 @@ form:valid .fa{
   line-height: 27px;
 }
 /***** Hero Section End hare *****/
+
+/*******Find Section Start Hare*********/
+.find-area{
+  padding-top: 75px;
+}
+.find-area .title-wrapper{
+  text-align: center;
+}
+.find-area .title-wrapper h4{
+  font-weight: 600;
+}
+.find-area .description{
+  max-width: 778px;
+  margin: 0 auto;
+  margin-top: 19px;
+}
+.find-area .description p{
+  font-size: 18px;
+}
+.find-area .icon-wrapper{
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+/*******Find Section End Hare*********/
 
