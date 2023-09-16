@@ -30,7 +30,11 @@ Verson: 1.0.0
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+  --items-box-shadow:4px 10px 30px rgba(107, 107, 107, 0.05);
+  --items-hover-shadow:10px 15px 40px rgba(152, 152, 152, 0.2);
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --box-2-shadow:0px 10px 40px rgba(0, 0, 0, 0.05);
+  --box2-hover-shadow:0px 15px 40px rgba(0, 0, 0, 0.1);
 }
 
 /*******Theme Default*******/
@@ -41,6 +45,9 @@ body{
   font-size: 16px;
   color: var(--body-color);
   font-family: 'Poppins', sans-serif;
+}
+p{
+  margin: 0;
 }
 h1{
   font-size: 54px;
@@ -63,15 +70,8 @@ h6{
 h1, h2, h3, h4, h5, h6{
   color: var(--heading-color);
   font-weight: 700;
-  margin: 0;
-  padding: 0;
-  line-height: 0;
 }
-p{
-  margin: 0;
-  padding: 0;
-  line-height: 0;
-}
+
 i{
   line-height: 0;
 }
@@ -94,7 +94,7 @@ li{
 .container{
   max-width: 1320px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 15px;
 }
 .button{
   padding: 10px 30px;
@@ -103,6 +103,9 @@ li{
   background: #000;
   border: 1px solid #000;
   border-radius: 4px;
+  box-shadow: var(--box-2-shadow);
+  transition: 0.3s;
+  cursor: pointer;
 }
 .button-2{
   padding: 10px 30px;
@@ -111,6 +114,15 @@ li{
   background: var(--primary-color);
   border: 1px solid var(--primary-color);
   border-radius: 4px;
+  box-shadow: var(--box-2-shadow);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.button:hover{
+  box-shadow: var(--box2-hover-shadow);
+}
+.button-2:hover{
+  box-shadow: var(--box2-hover-shadow);
 }
 .button a, .button-2 a{
   color: var(--bs-light)!important;
@@ -119,9 +131,6 @@ li{
 
 /* Header Section Start Hare */
 
-header{
-  margin-bottom: 1000px;
-}
 header .header-top-wrapper{
   display: flex;
   align-items: center;
@@ -268,4 +277,28 @@ form:valid .fa{
     top: 0;
   }
 }
+
+/***** Header Section End hare *****/
+
+/***** Hero Section start hare *****/
+.hero-area{
+  background: url(../images/hero-1.jpg);
+  background-size: cover;
+  padding: 50px 0;
+}
+.hero-area .title-wrapper{
+  max-width: 661px;
+}
+.hero-area .title-wrapper .sub-title p{
+  color: #fe696a;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.hero-area .title-wrapper .description p{
+  font-size: 15px;
+  line-height: 27px;
+}
+/***** Hero Section End hare *****/
 
