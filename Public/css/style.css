@@ -85,7 +85,6 @@ a{
 }
 ul{
   display: flex;
-  align-items: center;
   margin: 0;
 }
 li{
@@ -231,6 +230,9 @@ form:valid .fa{
 .menu-wrapper{
   margin-left: auto;
 }
+.menu-wrapper ul{
+  align-items: center;
+}
 .menu-wrapper ul li+ li{
   margin-left: 23px;
 }
@@ -328,5 +330,41 @@ form:valid .fa{
   display: flex;
   align-items: center;
 }
-/*******Find Section End Hare*********/
+/******* Find Section End Hare *********/
+
+/******* Skill Section Start Hare *********/
+.skill-area{
+  padding: 80px 0;
+  background: #F5F5F5 url(../images/skill-area-bg.png) no-repeat right bottom;
+  background-size: 300px auto;
+}
+.skill-area .title-wrapper{
+  text-align: center;
+  margin-bottom: 45px;
+}
+.skill-area .skill-items{
+  margin-bottom: 25px;
+}
+.skill-area .skill-items .title{
+  margin-bottom: 15px;
+}
+.skill-area .skill-items .title h6{
+  font-size: 20px;
+  color: #242424;
+}
+.skill-area .skill-items ul{
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+.skill-area .skill-items ul li{
+  margin-bottom: 10px;
+  display: inline;
+} 
+.skill-area .skill-items ul li .view-more{
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/******* Skill Section End Hare *********/
 
