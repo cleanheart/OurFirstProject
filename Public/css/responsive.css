@@ -53,6 +53,9 @@
 }
 @media(max-width:455px){
   .find-area .title-wrapper h4{
-    font-size: 20px;
+    font-size: 19px;
+  }
+  .find-area .description p{
+    font-size: 16px;
   }
 }
