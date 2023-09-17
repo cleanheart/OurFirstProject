@@ -10,27 +10,7 @@ Verson: 1.0.0
   --primary-box-shadow: 0 0.5rem 1.125rem -0.5rem rgba(254,105,106,0.9);
   --heading-color:#000;
   --body-color:#777;
-  --bs-blue: #0d6efd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
-  --bs-red: #dc3545;
-  --bs-orange: #fd7e14;
-  --bs-yellow: #ffc107;
-  --bs-green: #198754;
-  --bs-teal: #20c997;
-  --bs-cyan: #0dcaf0;
-  --bs-white: #fff;
-  --bs-gray: #6c757d;
-  --bs-gray-dark: #343a40;
-  --bs-primary: #0d6efd;
-  --bs-secondary: #6c757d;
-  --bs-success: #198754;
-  --bs-info: #0dcaf0;
-  --bs-warning: #ffc107;
-  --bs-danger: #dc3545;
-  --bs-light: #f8f9fa;
-  --bs-dark: #212529;
+  --text-color:#242424 ;
   --items-box-shadow:4px 10px 30px rgba(107, 107, 107, 0.05);
   --items-hover-shadow:10px 15px 40px rgba(152, 152, 152, 0.2);
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -335,7 +315,7 @@ form:valid .fa{
 
 /******* Skill Section Start Hare *********/
 .skill-area{
-  margin-bottom: 1000px;
+  z-index: -1;
   position: relative;
   padding: 80px 0;
   background: #F5F5F5 url(../images/skill-area-bg.png) no-repeat right bottom;
@@ -372,44 +352,114 @@ form:valid .fa{
   color: var(--primary-color);
   text-decoration: underline;
 }
-.skill-area .content-wrapper{
-  /* position: absolute; */
+
+/******* Skill Section End Hare *********/
+
+/******* Get Started Section start Hare *********/
+
+
+.get-started-area .content-wrapper{
   margin-bottom: -167px !important;
   width: 90%;
-  /* left: 14%; */
   margin: 0 auto;
-  display: flex;
+  display: none;
   align-items: center;
   border-radius: 16px;
   background-color: #fff;
   box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.07);
   padding: 26px 30px;
+  margin-top: -81px;
+  z-index: 1;
 }
-.skill-area .content-wrapper .left{
+.get-started-area .content-wrapper .left{
   max-width: 696px;
 }
-.skill-area .content-wrapper .right{
+.get-started-area .content-wrapper .right{
   width: 19%;
 }
-.skill-area .content-wrapper h5{
+.get-started-area .content-wrapper h5{
   font-size: 24px;
   margin-bottom: 8px;
   line-height: 36px;
 }
-.skill-area .content-wrapper p{
+.get-started-area .content-wrapper p{
   line-height: 1.8;
 }
-.skill-area .content-wrapper .right{
+.get-started-area .content-wrapper .right{
   margin-left: auto;
 }
-.skill-area .content-wrapper .right .button-2{
+.get-started-area .content-wrapper .right .button-2{
   color: #fff;
   text-transform: capitalize;
   transition: 0.3s;
 }
-.skill-area .content-wrapper .right .button-2:hover{
+.get-started-area .content-wrapper .right .button-2:hover{
   box-shadow: var(--primary-box-shadow);
 }
 
-/******* Skill Section End Hare *********/
+/******* Get Started Section End Hare *********/
 
+
+/********* Footer section start hare ***********/
+footer{
+  padding-top: 80px;
+}
+footer .text p{
+  margin: 20px 0;
+  line-height: 1.8;
+}
+footer .icon-wrapper a{
+  margin-right: 10px;
+  background: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 50px;
+  transition: .6s;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+}
+footer .icon-wrapper a:hover{
+  color: #fff;
+  background: var(--primary-color);
+}
+footer .icon-wrapper a i{
+  background: transparent;
+}
+.widget-title{
+  margin-bottom: 20px;
+}
+.widget-title h6{
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.widget-list ul{
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  padding-left: 0;
+}
+.widget-list ul li{
+  margin-bottom: 10px;
+  color: var(--text-color);
+  transition: 0.6s;
+}
+.widget-list ul li:hover{
+  color: var(--primary-color);
+}
+.copyright-area{
+  margin-top: 80px;
+  padding: 20px;
+  text-align: center;
+  background: var(--text-color);
+}
+.copyright-area p{
+  color: rgba(255, 255, 255, 0.8);
+}
+.copyright-area .name{
+  color: var(--primary-color);
+}
+/********* Footer section End hare ***********/
