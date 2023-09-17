@@ -317,7 +317,7 @@ form:valid .fa{
 .skill-area{
   z-index: -1;
   position: relative;
-  padding: 80px 0;
+  padding: 80px 0 90px 0;
   background: #F5F5F5 url(../images/skill-area-bg.png) no-repeat right bottom;
   background-size: 300px auto;
 }
@@ -360,9 +360,8 @@ form:valid .fa{
 
 .get-started-area .content-wrapper{
   margin-bottom: -167px !important;
-  width: 90%;
   margin: 0 auto;
-  display: none;
+  display: flex;
   align-items: center;
   border-radius: 16px;
   background-color: #fff;
@@ -403,6 +402,7 @@ form:valid .fa{
 /********* Footer section start hare ***********/
 footer{
   padding-top: 80px;
+  margin-top: 160px;
 }
 footer .text p{
   margin: 20px 0;
@@ -410,6 +410,7 @@ footer .text p{
 }
 footer .icon-wrapper a{
   margin-right: 10px;
+  margin-top: 10px;
   background: #fff;
   border: 1px solid #e1e1e1;
   border-radius: 50px;
@@ -433,7 +434,7 @@ footer .icon-wrapper a i{
 }
 .widget-title h6{
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: capitalize;
 }
 .widget-list ul{
