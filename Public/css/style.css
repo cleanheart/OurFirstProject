@@ -286,6 +286,101 @@ form:valid .fa{
 }
 /***** Hero Section End hare *****/
 
+/***** Service Section Start hare *****/
+.service-area{
+  padding: 80px 0;
+}
+.service-area .title{
+  text-align:center;
+  margin-bottom: 50px;
+}
+.service-area .inner{
+  padding: 15px;
+  margin-bottom: 30px;
+  background: #fff;
+  box-shadow: 1px 0px 20px rgba(0,0,0,0.07);
+  border-radius: 4px;
+  transition: 0.3s;
+}
+.service-area .inner:hover .img-wrapper img{
+  transform: scale(1.1);
+}
+.service-area .inner .img-wrapper{
+  overflow: hidden;
+  border-radius: 4px;
+}
+.service-area .inner .img-wrapper img{
+  transition: 0.3s;
+  width: 100%;
+}
+.service-area .profile-wrapper{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom:10px;
+}
+.service-area .profile-wrapper img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.service-area .profile-wrapper .name{
+  text-transform: capitalize;
+  font-size: 14px;
+  color: var(--text-color);
+}
+.service-area .profile-wrapper .icon{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #559250;
+  font-size: 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  color: #fff;
+}
+.service-area .title-wrapper{
+  margin-bottom: 5px;
+}
+.service-area .title-wrapper h6{
+  font-weight: 500;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+.service-area .inner:hover .title-wrapper h6{
+  color:var(--primary-color);
+}
+.service-area .title-wrapper .ord{
+  font-size: 14px;
+  color: #777;
+}
+.service-area .review{
+  font-size: 14px;
+}
+.service-area .review .icon{
+  color: #fe696a;
+  margin-right: 5px;
+}
+.service-area .prize-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ebebeb;
+  padding-top: 10px;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.service-area .prize-wrapper .icon{
+  font-size: 18px;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+/***** Service Section End hare *****/
+
 /*******Find Section Start Hare*********/
 .find-area{
   padding-top: 75px;
