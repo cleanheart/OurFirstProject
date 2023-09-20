@@ -318,6 +318,38 @@ form:valid .fa{
   align-items: center;
   margin-top: 15px;
   margin-bottom:10px;
+  position: relative;
+  transition: 0.3s;
+}
+.service-area .profile-wrapper::after{
+  position: absolute;
+  content: "verified";
+  background: var(--primary-color);
+  padding: 7px 10px;
+  border-radius: 4px;
+  color: #fff;
+  text-transform: capitalize;
+  top: -39px;
+  left: 107px;
+  display: none;
+}
+.service-area .inner:hover .profile-wrapper::after{
+  display: inline-block;
+}
+.service-area .profile-wrapper::before{
+  position: absolute;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  content: "";
+  width: 15px;
+  height: 15px;
+  transform: rotate(180deg);
+  background: var(--primary-color);
+  left: 138px;
+  top: -7px;
+  display: none;
+}
+.service-area .inner:hover .profile-wrapper::before{
+  display: inline-block;
 }
 .service-area .profile-wrapper img{
   width: 30px;
